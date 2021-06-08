@@ -159,7 +159,7 @@ Vamos introduzir conceitos de _programação modular_ através do uso de _funç�
  - Também serão utilizadas para revisões e esclarecimento de dúvidas.
  - Salvo situações excepcionais, começam no horário marcado com tolerância de 5 minutos.
 
-> Antes da aula: __ver o vídeo sugerido no Discord__.
+> Antes da aula: __ver o vídeo sugerido no repositório da disciplina__.
 
 > Depois da aula: __ler a apostila e fazer os exercícios propostos__.
 ---
