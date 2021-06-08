@@ -124,7 +124,6 @@ Operadores do _mesmo nível de precedência_, em uma mesma linha, são avaliados
 12 * 2 / 8 =
 24 / 8 = 3
 ```
-
 ---
 
 ### Precedência dos operadores lógicos e relacionais 
@@ -138,8 +137,6 @@ x = 3 + 2 >= 2
 x = 5 >= 2 
 x = 1
 ```
-
-
  ---
 
  #### Vídeo: Casting (8:10)
