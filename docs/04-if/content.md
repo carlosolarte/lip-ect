@@ -26,8 +26,7 @@ O fluxo é escolhido de acordo com o resultado de uma _expressão booleana_
 
 ---
 
-<iframe width="1206" height="678" src="https://www.youtube.com/embed/Os0RC80O0ko?list=PLLjLO9s7KS4UBrOBelz0GyfiFn4CSqquH" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+<iframe width="790" height="444" src="https://www.youtube.com/embed/vQk0r3l_-w0?list=PLLjLO9s7KS4UBrOBelz0GyfiFn4CSqquH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ---
 
 ### Comando If-Else

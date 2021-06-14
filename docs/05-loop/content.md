@@ -13,6 +13,7 @@ Nesta aula estudaremos os comandos:
  - `do-while`
  - `break` e `continue`
 
+---
 
 #### Problemas a resolver
 Situações nas quais precissamos repetir a mesma operação várias vezes, ex. para

@@ -41,7 +41,7 @@ Slides da discipline ECT-2303 (Linguagem de Programaçao)
 - Condições aninhadas 
 
 ### Material
-- <https://youtu.be/HFO-9gBz5uo?list=PLLjLO9s7KS4UBrOBelz0GyfiFn4CSqquH>
+- <https://youtu.be/vQk0r3l_-w0?list=PLLjLO9s7KS4UBrOBelz0GyfiFn4CSqquH>
 - <https://youtu.be/BKZIi9Ed0U4?list=PLLjLO9s7KS4UBrOBelz0GyfiFn4CSqquH>
 - Capítulo 3 da apostila
 
