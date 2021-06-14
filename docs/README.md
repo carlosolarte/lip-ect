@@ -32,3 +32,28 @@ Slides da discipline ECT-2303 (Linguagem de Programaçao)
  - <https://youtu.be/aJHJGCuNDhc?list=PLLjLO9s7KS4UBrOBelz0GyfiFn4CSqquH>
  - <https://youtu.be/X8VLMjGAupg?list=PLLjLO9s7KS4UBrOBelz0GyfiFn4CSqquH>
  - Capítulo 2 da apostila 
+
+## [04 Comandos de Seleção](04-if)
+- Comandos de seleção
+- `if / else`
+- `switch`
+- Operador ternário 
+- Condições aninhadas 
+
+### Material
+- <https://youtu.be/HFO-9gBz5uo?list=PLLjLO9s7KS4UBrOBelz0GyfiFn4CSqquH>
+- <https://youtu.be/BKZIi9Ed0U4?list=PLLjLO9s7KS4UBrOBelz0GyfiFn4CSqquH>
+- Capítulo 3 da apostila
+
+## [05 Comandos de Repetição](05-loop)
+- Laços de repetição
+- Comandos `for`, `while` e `do while`
+- Comandos `break` e `continue` 
+
+## Material
+- <https://youtu.be/dc_4nJilfTs?list=PLLjLO9s7KS4UBrOBelz0GyfiFn4CSqquH>
+- <https://youtu.be/gPmA43hnPhM?list=PLLjLO9s7KS4UBrOBelz0GyfiFn4CSqquH>
+- <https://youtu.be/BPml3SkrQvY?list=PLLjLO9s7KS4UBrOBelz0GyfiFn4CSqquH>
+- <https://youtu.be/K4Wop7eTO1I?list=PLLjLO9s7KS4UBrOBelz0GyfiFn4CSqquH>
+- Capítulo 4 da apostila
+
