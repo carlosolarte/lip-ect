@@ -194,8 +194,8 @@ int main () {
 ### Comando de Seleção `switch`
 Exemplo: imprimir os dias da semana
 ```cpp
-cin >> n;
-switch (n) {
+cin >> dia;
+switch (dia) {
   case 0:
     cout << "Domingo" << endl;
     break;
@@ -204,7 +204,7 @@ switch (n) {
    break;
    ...
   default:
-     cout << "Dia inválido" << endl;
+     cout << "Dia não válido" << endl;
 }
 ```
 Não esquecer o *`break`*
