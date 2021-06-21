@@ -110,7 +110,7 @@ int main() {
       primeiro = false ;
     }
     else{
-      if(num < menor){
+      if(num!=0 && num < menor){
         menor=num;
       }
     }
