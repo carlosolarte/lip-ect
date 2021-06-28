@@ -77,7 +77,7 @@ int main() {
         novo = v1 + v2;
         v1 = v2;
         v2 = novo;
-        if (novo >1000)
+        if (novo >L)
             break; // Termina o laço
         cout << novo << endl ;
     }
@@ -128,5 +128,47 @@ int main() {
   cout << "Somatório: " << soma << endl ;
   
   return 0;
+
+
+  // 7 Número primo
+  int n,i;
+  bool primo = true;
+
+  cout << "Número >=2: "  ;
+  cin >> n;
+  for(i=2;i<n;i++){
+    if (n%i == 0){
+      primo = false;
+      break;
+    }
+  }
+
+  if (primo)
+    cout << n << " é primo " <<  endl ;
+  else
+    cout << n << " não é primo " << endl ;
+
+  return 0;
+
+ //================
+ // 8. While <-> for
+ int soma = 0,n,i;
+  float media;
+
+  for(i=0;;i++){
+    cout << "Ingrese um número (0 para termiar)" ;
+    cin >> n;
+    if (n == 0)
+      break;
+    soma += n;
+  }
+  cout << "Soma: " << soma << endl;
+  cout << "i: " << i << endl;
+
+  media = (float) soma / i ;
+  cout << "media: " << media << endl ;
+
+  return 0;
+  
 
 */

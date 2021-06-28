@@ -57,3 +57,14 @@ Slides da discipline ECT-2303 (Linguagem de Programaçao)
 - <https://youtu.be/K4Wop7eTO1I?list=PLLjLO9s7KS4UBrOBelz0GyfiFn4CSqquH>
 - Capítulo 4 da apostila
 
+## [05 Funções I](06-funcoesI)
+- Funções: cabeçalho, declaração e chamada
+- Comando `return`
+- Exemplos simples
+
+## Material
+- <https://youtu.be/9S32uN23u5Q?list=PLLjLO9s7KS4UBrOBelz0GyfiFn4CSqquH>
+- <https://youtu.be/XDPudzItdd8?list=PLLjLO9s7KS4UBrOBelz0GyfiFn4CSqquH>
+- <https://youtu.be/I67p4RNXj58?list=PLLjLO9s7KS4UBrOBelz0GyfiFn4CSqquH>
+- <https://youtu.be/zoILKCpydJ4?list=PLLjLO9s7KS4UBrOBelz0GyfiFn4CSqquH>
+- Capítulo 5 da apostila
