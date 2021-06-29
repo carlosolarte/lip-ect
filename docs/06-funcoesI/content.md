@@ -22,7 +22,7 @@ char, int, float, bool
 
 E se pudéssemos atribuir não um valor, mas sim, um _trecho de código_ a um _nome_, similar a uma variável?
 
->Isto é exatamente o que acontece com funções em linguagens de programação
+>Isto é exatamente o que acontece com as funções das linguagens de programação
 
 ---
 ### Funções
