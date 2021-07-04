@@ -68,3 +68,13 @@ Slides da discipline ECT-2303 (Linguagem de Programaçao)
 - <https://youtu.be/I67p4RNXj58?list=PLLjLO9s7KS4UBrOBelz0GyfiFn4CSqquH>
 - <https://youtu.be/zoILKCpydJ4?list=PLLjLO9s7KS4UBrOBelz0GyfiFn4CSqquH>
 - Capítulo 5 da apostila
+
+## [06 Funções II](06-funcoesII)
+- Escopo das variáveis
+- Parâmetros por valor
+- Parâmetros por referência
+
+## Material
+- <https://youtu.be/pp6iWfYM2mg?list=PLLjLO9s7KS4UBrOBelz0GyfiFn4CSqquH>
+- <https://youtu.be/ymellvbj8Cc?list=PLLjLO9s7KS4UBrOBelz0GyfiFn4CSqquH>
+Capítulo 6 da apostila. 
