@@ -412,13 +412,14 @@ void infoDigito1(int n, int &dpares, int &tdigitos){
     int d; // Variável local
     dpares=0;
     tdigitos=0;
-    while(n>0){
+    do{
         d = n % 10; // Próximo dígito
         tdigitos ++; // Dígitos totais
         if (d %2 ==0) dpares++; // Dígitos pares
 
         n /= 10 ; // próximo valor de n
     }
+    while(n>0);
 }
 ```
 - A função __não__ retorna um valor
@@ -433,13 +434,14 @@ int infoDigito2(int n,  int & tdigitos){
     int d; // Variável local
     int dpares=0; // Variável local!
     tdigitos=0;
-    while(n>0){
+    do{
         d = n % 10; // Próximo dígito
         tdigitos ++; // Dígitos totais
         if (d %2 ==0) dpares++; // Dígitos pares
 
         n /= 10 ; // próximo valor de n
     }
+    while(n>0);
     return dpares;
 }
 ```
@@ -703,7 +705,7 @@ O que está errado neste código?
 ```cpp
 int sprimo(int x, int y){
     int soma = 0;
-    for(x; x <= y; x++){
+    for(; x <= y; x++){
         if(eprimo(x) == true){
             soma = soma + x;
         }
@@ -719,8 +721,8 @@ O que está errado neste código?
 ```cpp
 int sprimo(int x, int y){
     int soma = 0;
-    for(int i= x; i <= y; i++){
-        if(eprimo(i)){
+    for(; x <= y; x++){
+        if(eprimo(x) == true){
             soma = soma + x;
         }
     }
@@ -908,5 +910,3 @@ int main()
 
 ### Teste!
 <https://multiprova.ufrn.br/>
-
-
