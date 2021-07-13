@@ -78,3 +78,14 @@ Slides da discipline ECT-2303 (Linguagem de Programaçao)
 - <https://youtu.be/pp6iWfYM2mg?list=PLLjLO9s7KS4UBrOBelz0GyfiFn4CSqquH>
 - <https://youtu.be/ymellvbj8Cc?list=PLLjLO9s7KS4UBrOBelz0GyfiFn4CSqquH>
 Capítulo 6 da apostila. 
+
+## [07 Vetores](07-vetores)
+- Declaração de vetores
+- Vetores e estruturas de repetição
+
+## Material
+- <https://youtu.be/VhLJsebEhDc?list=PLLjLO9s7KS4UBrOBelz0GyfiFn4CSqquH>
+- <https://youtu.be/okiZ9mSy95s?list=PLLjLO9s7KS4UBrOBelz0GyfiFn4CSqquH>
+- <https://youtu.be/PZHVaMNO8B8?list=PLLjLO9s7KS4UBrOBelz0GyfiFn4CSqquH>
+
+Capítulo 8 da apostila. 
