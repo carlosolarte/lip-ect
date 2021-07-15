@@ -31,7 +31,7 @@ O uso de vetores facilita a solução de alguns problemas, e.x.,:
 ---
 
 ### Objetivos
-Responder a seguinte pergunta:
+Responder às seguintes perguntas:
 
 Aprendi que _uma variável_ guarda _UMA_ informação... 
 
