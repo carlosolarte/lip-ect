@@ -77,7 +77,7 @@ Slides da discipline ECT-2303 (Linguagem de Programaçao)
 ## Material
 - <https://youtu.be/pp6iWfYM2mg?list=PLLjLO9s7KS4UBrOBelz0GyfiFn4CSqquH>
 - <https://youtu.be/ymellvbj8Cc?list=PLLjLO9s7KS4UBrOBelz0GyfiFn4CSqquH>
-Capítulo 6 da apostila. 
+- Capítulo 6 da apostila. 
 
 ## [07 Vetores](07-vetores)
 - Declaração de vetores
@@ -96,7 +96,7 @@ Capítulo 8 da apostila.
 
 ## Material
 - <https://www.youtube.com/embed/GiDUeuyQqow?list=PLLjLO9s7KS4UBrOBelz0GyfiFn4CSqquH">
-Capítulo 10 da apostila. 
+- Capítulo 10 da apostila. 
 
 
 ## [09 Matrizes](09-matrizes)
@@ -104,4 +104,4 @@ Capítulo 10 da apostila.
 - Algoritmos simples utilizando matrizes
 ## Material
 - <https://youtu.be/L81pdXL1MKc?list=PLLjLO9s7KS4UBrOBelz0GyfiFn4CSqquH>
-Capítulo 09 da apostila. 
+- Capítulo 09 da apostila. 
