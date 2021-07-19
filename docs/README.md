@@ -89,3 +89,19 @@ Capítulo 6 da apostila.
 - <https://youtu.be/PZHVaMNO8B8?list=PLLjLO9s7KS4UBrOBelz0GyfiFn4CSqquH>
 
 Capítulo 8 da apostila. 
+
+## [08 Strings](08-strings)
+- Ler e imprimir strings 
+- Algoritmos simples com strings
+
+## Material
+- <https://www.youtube.com/embed/GiDUeuyQqow?list=PLLjLO9s7KS4UBrOBelz0GyfiFn4CSqquH">
+Capítulo 10 da apostila. 
+
+
+## [09 Matrizes](09-matrizes)
+- Declaração de matrizes
+- Algoritmos simples utilizando matrizes
+## Material
+- <https://youtu.be/L81pdXL1MKc?list=PLLjLO9s7KS4UBrOBelz0GyfiFn4CSqquH>
+Capítulo 09 da apostila. 
