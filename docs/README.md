@@ -106,7 +106,7 @@ Capítulo 8 da apostila.
 - <https://youtu.be/L81pdXL1MKc?list=PLLjLO9s7KS4UBrOBelz0GyfiFn4CSqquH>
 - Capítulo 09 da apostila. 
 
-## [10 Funções, Vetores e Matrizes]
+## [10 Funções, Vetores e Matrizes](10-vetores-funcoes)
 - Vetores e matrizes como parâmetros de funções
 
 ## Material
