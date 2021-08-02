@@ -121,6 +121,7 @@ void soma(int A[][TAM], int B[][TAM], int C[][TAM], int n, int m){
 // =======================================
 // =======================================
 #include <iostream>
+#include <cstring>
 #define TAM 30
 
 using namespace std;
