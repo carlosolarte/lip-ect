@@ -109,6 +109,7 @@ Capítulo 8 da apostila.
 ## [10 Funções, Vetores e Matrizes](10-vetores-funcoes)
 - Vetores e matrizes como parâmetros de funções
 - 11: [Mais exemplos](10-vetores-funcoes/index2.html)
+- 12: [Mais exemplos 2 ](10-vetores-funcoes/index3.html)
 
 
 ## Material
