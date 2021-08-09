@@ -114,3 +114,10 @@ Capítulo 8 da apostila.
 
 ## Material
 - Seções 8.2 e 9.4 da apostila. 
+
+## [11 Tipos Estruturados](11-tipos-estruturados)
+ - Definição de tipos estruturados
+ - Funções utilizando `struct`
+
+## Material
+- <https://youtu.be/kh3Z2ywZJmI>
