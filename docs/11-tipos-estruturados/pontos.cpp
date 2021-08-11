@@ -23,6 +23,7 @@ void print_quadrilatero(Quadrilatero q);
 void ler_ponto(Ponto &p);
 double dist (Ponto p1, Ponto p2) ;
 float distancia(Ponto vp[], int n);
+void ler_quadrilatero(Quadrilatero &q);
 
 
 int main(){
@@ -72,3 +73,7 @@ float distancia(Ponto vp[], int n){
     return soma;
 }
 
+void ler_quadrilatero(Quadrilatero &q){
+    for(int i=0; i < 4 ; i++)
+        ler_ponto(q.vertices[i]);
+}

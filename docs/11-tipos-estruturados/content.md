@@ -266,7 +266,7 @@ void ler_ponto(Ponto &p){
 }
 void ler_quadrilatero(Quadrilatero &q){
     for(int i=0; i < 4 ; i++)
-        ler_ponto(q[i]);
+        ler_ponto(q.vertices[i]);
 }
 ```
 
