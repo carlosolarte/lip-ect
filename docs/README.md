@@ -118,6 +118,12 @@ Capítulo 8 da apostila.
 ## [11 Tipos Estruturados](11-tipos-estruturados)
  - Definição de tipos estruturados
  - Funções utilizando `struct`
+ - 11.2: [Mais exemplos](11-tipos-estruturados/index2.html)
 
 ## Material
 - <https://youtu.be/kh3Z2ywZJmI>
+
+## [12 Recursão](12-recursao/rec.pdf)
+ - Funções recursivas
+ - Busca Binária 
+
