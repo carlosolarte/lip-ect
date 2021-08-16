@@ -127,3 +127,5 @@ Capítulo 8 da apostila.
  - Funções recursivas
  - Busca Binária 
 
+## Material
+- Seção 7 da apostila
