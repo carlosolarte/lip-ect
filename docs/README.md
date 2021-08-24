@@ -126,6 +126,7 @@ Capítulo 8 da apostila.
 ## [12 Recursão](12-recursao/rec.pdf)
  - Funções recursivas
  - Busca Binária 
+ - 12.2 [Mais exemplos](12-recursao/)
 
 ## Material
 - Seção 7 da apostila
