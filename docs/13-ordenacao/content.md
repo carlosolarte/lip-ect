@@ -47,7 +47,9 @@ Em cada iteração o maior elemento _flutua_ até a última posição.
 ---
 ### Bubble Sort (Bolha)
 
-<img src=bbsort.png height=550/>
+<img src=bbsort.png height=440/>
+
+fonte: <https://www.algolist.net/>
 
 ---
 

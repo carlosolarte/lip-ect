@@ -133,5 +133,6 @@ Capítulo 8 da apostila.
 
 ## [13 Ordenação](13-ordenacao)
  - Algoritmos de ordenação
+
 ## Material
 - Seção 8.3 da apostila
