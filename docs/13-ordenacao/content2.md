@@ -42,7 +42,7 @@ void mergeRec(int v[], int ini, int fim){
 ```
 // Unir v[ini..meio-1] + v[meio ..fim]
 // Os subvetores devem estar ordenados
-void interc(int v[], int ini, int meio, int fim){
+void intercalar(int v[], int ini, int meio, int fim){
     int aux[TAM];
     int i=ini, j=meio, k=0;
     while(i< meio && j <= fim){
@@ -52,11 +52,16 @@ void interc(int v[], int ini, int meio, int fim){
             aux[k++] = v[j++];
     }
     // Armazenar os valores que faltaram
-    while(i < meio) aux[k++] = v[i++];
-    while(j <= fim) aux[k++] = v[j++];
+    while(i < meio) 
+        aux[k++] = v[i++];
+
+    while(j <= fim) 
+        aux[k++] = v[j++];
+
     // Copiar aux no vetor original
     k=0;
-    for(i=ini ; i <= fim ; i++) v[i] = aux[k++];
+    for(i=ini ; i <= fim ; i++) 
+        v[i] = aux[k++];
 }
 ```
 ---
@@ -97,3 +102,54 @@ void bubble(int v[], int n){
   }
 }
 ```
+
+---
+## Ordenar Círculos
+Implemente uma função que ordene um vetor de círculos em ordem decrescente
+segundo a sua área.
+
+---
+## Ordenar Círculos
+
+Definimos a estrutura de dados
+
+```cpp
+struct Ponto {
+    double x, y;
+};
+
+struct Circulo{
+    Ponto c;
+    double raio;
+};
+```
+---
+## Ordenar Círculos
+Modificamos qualquer um dos algoritmos de ordenação
+
+```cpp
+void swap(Circulo v[], int p1, int p2){
+    Circulo temp;
+    temp = v[p1];
+    v[p1] = v[p2];
+    v[p2] = temp;
+}
+```
+---
+## Ordenar Círculos
+Modificamos qualquer um dos algoritmos de ordenação
+
+```cpp
+void ordenar(Circulo v[], int n){
+    int i, j, min;
+    for(i = 1 ; i < n ; i++){
+        for(j = i; j >0 ; j--){
+            if(v[j].raio > v[j-1].raio)
+                swap(v,j,j-1);
+            else 
+                break;
+        }
+    }
+}
+```
+

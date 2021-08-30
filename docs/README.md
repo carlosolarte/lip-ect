@@ -133,6 +133,7 @@ Capítulo 8 da apostila.
 
 ## [13 Ordenação](13-ordenacao)
  - Algoritmos de ordenação
+ - 13.2 [Mais exemplo](13-ordenacao/index2.html)
 
 ## Material
 - Seção 8.3 da apostila
