@@ -137,3 +137,9 @@ Capítulo 8 da apostila.
 
 ## Material
 - Seção 8.3 da apostila
+
+## [14 Paradigmas de Programação](14-paradigmas)
+- Programação Orientada a Objetos
+- Programação funcional
+- Programação por restrições
+- Outras linguagens de programação

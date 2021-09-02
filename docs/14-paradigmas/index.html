@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Paradigmas de programação</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="../dist/reveal.css">
+        <link rel="stylesheet" href="../dist/theme/ect.css" id="theme">
+    <link rel="stylesheet" href="../plugin/highlight/monokai.css">
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <div class="slides">
+
+        <section data-markdown data-separator="---">
+          <script type="text/template">
+            ## Paradigmas de Programação
+            ### Carlos Olarte
+            ---
+
+            #### Objetivo da aula
+
+            - Mostrar que tipo de problemas podem ser resolvidos com outros <span style="color:blue">paradigmas de programação</span>.
+
+            ---
+
+            #### Nesta aula
+
+            - Encapsulamento, abstração e POO
+            - Programação Funcional
+            - Modelos declarativos
+            - Outras linguagens
+
+            ---
+
+            ## C++ programação imperativa
+
+          </script>
+        </section>
+
+
+        <section data-auto-animate>
+          <h4>C++ programação imperativa</h4>
+          <p style="background: #eee">Variáveis e estado</p>
+
+          <pre data-id="code-animation"><code class="C++" data-trim data-line-numbers="1-3|4-5|6-11">
+          // Variáveis: armazenam dados de algum tipo
+          int idade;
+          float preço;
+          // Vetores: Coleção de variáveis do mesmo tipo
+          float notas[TAM];
+          // Tipos estruturados
+          struct Pessoas{ 
+            Data DN; 
+            char nome[50];
+            ...
+          };
+          </code></pre>
+
+        </section>
+        <section data-auto-animate>
+          <h4>C++ programação imperativa</h4>
+          <p style="background: #eee">Estruturas de Controle</p>
+
+          <pre data-id="code-animation"><code class="C++" data-trim data-line-numbers="1-11|13-24">
+          // Condicionais
+          if (c) { 
+          ... 
+          } 
+          else { 
+          ... 
+          }
+
+          switch (n){ 
+            case .... 
+          }
+
+          // Laços de repetição
+          for (...){
+           ...
+          }
+
+          while(...){
+           ...
+          }
+
+          do{
+            ...
+          } while(...);
+          </code></pre>
+
+        </section>
+
+        <section data-markdown data-separator="---">
+          <script type="text/template">
+            #### C++ programação imperativa
+
+            - É um paradigma de programação que descreve a computação como <span style="color:blue">ações</span>  ou comandos que mudam o <span style="color:blue">estado</span> de um programa.
+            - Os programas executam _passo a  passo_ as instruções
+
+            ---
+
+            #### O que sabemos fazer em C++?
+
+            - Resolver problemas simples de matemática
+            - Simular sistemas simples
+            - Calcular funções
+            - Armazenar e manipular dados em estruturas e vetores 
+
+            ---
+
+            #### Outras linguagens
+
+            existem muitas... e de características totalmente diferentes!
+
+            ![Linguagens](img/progLanguages.jpg)
+
+            ---
+
+            #### Curiosidade
+            Como imprimir na tela "alo mundo" (hello world):
+
+            [Hello world!](http://c2.com/cgi/wiki?HelloWorldInManyProgrammingLanguages)
+
+            ---
+
+            ## Encapsulamento, abstração e POO
+
+            ---
+
+            #### Programação Orientada a Objetos
+
+            - Evolução da programação estruturada
+            - Controlar o acesso às estruturas de dados (<span style="color:blue">encapsulamento</span>).
+            - Modelo baseado em estados (_variáveis_)
+            - Boa escalabilidade
+
+            > O _design_ baseado em OO é similar ao jeito em que as pessoas pensam!
+
+            ---
+
+            #### Um cenário típico
+
+            - _Vários Usuários_: técnico, suporte, cobrança, vendas...
+            - _Muitas entidades_: contratos, chamadas, clientes, cupons fiscais, reclamações/queixas ...
+            - _Um número muito grande de relações_: usuário e contratos, contratos e cupons fiscais...
+
+            > Como abordar a construção desse sistema tão complexo?
+
+            --- 
+
+            #### Programação Orientada a Objetos
+
+            - Entidades reais correspondem a <span style="color:blue">classes</span>.
+            -  Peças de código podem ser substituídas.
+            - As <span style="color:blue">relações</span> entre entidades são <span style="color:blue">explícitas</span>.
+            - Mecanismos para construir e organizar abstrações/refinamentos (<span style="color:blue">herança</span>).
+
+            ---
+
+            #### Classes
+
+            Abstração para agrupar objetos comuns
+
+
+            Exemplo em Java
+            ```[1|2-5|6-9]
+            class Pessoa{
+                // Atributos
+                String nome;
+                int idade;
+
+                // Métodos
+                public void  mudarEndereco(String end){
+                    self.end = end;
+                }
+               ...
+            ```
+            - <span style="color:blue">Atributos</span>: Características de cada objeto
+            - <span style="color:blue">Métodos</span>: Comporamento dos objetos 
+
+            ---
+
+            #### Classes
+
+
+            Será que precissamos de classes?
+
+            ```
+            struct Pessoa{ 
+              char nome[TAM];
+              ...
+            };
+            void mudarEndereco(Pessoa &P, char end[]){
+              strcpy(P.end, end);
+            }
+
+            ```
+
+            ---
+
+            #### Classes
+            Melhor proteger os atributos...
+            ```
+
+            struct Conta{
+              double saldo;
+              ....
+            };
+
+            Conta C;
+            ...
+
+            C.saldo += 1000;// Acesso não controlado
+
+            ```
+
+            ---
+
+            #### As linguagens OO protegem os atributos
+            <span style="color:blue">Encapsulamento</span>: Ocultar informações
+
+            ```[1-3|4-7|8-13]
+            class Conta{
+                // Atributo privado
+                private double saldo;
+
+                // Só utilizando métodos podemos acessar o saldo
+                double getSaldo(){
+                    return this.saldo;
+                }
+                // Controle nas atualizações 
+                void saque(double c){
+                  if(this.saldo >= c)
+                    this.saldo -= c;
+                }
+            }
+            ```
+
+            ---
+
+            #### Herança
+            - Qual é a relação entre uma _Figura_, um _Círculo_ e um _Triângulo_?
+            - Toda figura 2D possui uma área...como posso especificar isso?
+
+            --- 
+            #### Herança
+
+            Diagrama UML
+
+            ![Figuras](img/heranca.jpg)
+
+            ---
+
+            #### Polimorfismo
+
+            - Como podemos representar um _Mundo 2D_?
+            - Como calculamos a área total?
+
+            ![Polimorfismo](img/m2d.jpg)
+
+            <a href="https://www.fun-stuff-to-do.com/">Fonte</a>
+
+            ---
+
+            #### Polimorfismo
+            ```
+            struct Ponto{ double x,y;};
+            struct Circulo{ double raio; Ponto centro;};
+            struct Quadrado{ Ponto origem, double lado;};
+
+            double area(Circulo c}{
+             ...
+            }
+            double area(Quadrado c}{
+             ...
+            }
+            ```
+            ... como calcular a área de um vetor de _Figuras_?
+
+            ---
+
+            #### Polimorfismo
+            Isto não funciona muito bem...
+            ```C++
+            double area(Circulo vc[], Quadrado vq[] ...){
+             ...
+            }
+            ```
+
+            ---
+            #### Polimorfismo
+            Solução utilizando polimorfismo: 
+
+            ```C++
+            double area(Figura vf[], int n){
+              double soma=0;
+              for(int i=0; i < n; i++ ){
+                soma += vf[i].area(); // Método área
+              }
+              return soma;
+            }
+            ```
+               
+            Qual método será executado?
+
+            ---
+            #### Resumindo
+
+            -  As classes <span style="color:blue">encapsulam</span> os dados. 
+            -  As linguagens OO _protegem_ os dados <span style="color:blue">privados</span>.
+            -  Os métodos definem o <span style="color:blue">comportamento</span>  dos objetos.
+            -  A <span style="color:blue">herança</span> permite construir abstrações de forma incremental.
+
+            ---
+
+            ## Programação Funcional
+
+
+          </script>
+        </section>
+
+        <section>
+          <h4>Programação Funcional</h4>
+          Alguns programas não precisam de estado
+          <div class="r-hstack">
+            <pre data-id="code-animation"><code class="C++" data-trim data-line-numbers>
+              int fatorial(int n){
+                 int p=1,i;
+                 for(i=2;i<=n;i++)
+                  p*= i;
+
+                 return p;
+              }
+
+          </pre></code>
+          <p> &nbsp;&nbsp;vs&nbsp;&nbsp; </p>
+          <pre data-id="code-animation"><code class="C++" data-trim data-line-numbers>
+              int fatorial(int n){
+                 if (n==1)
+                   return 1;
+                 return n* fatorial(n-1);
+                }
+        </pre></code>
+
+          </div>
+
+        </section>
+
+        <section data-markdown data-separator="---">
+          <script type="text/template">
+            #### Programação Funcional 
+            > Paradigma de programação que trata a computação como uma _avaliação de funções matemáticas_ e que evita estados ou dados mutáveis
+
+            Mas C++ possui funções... que tem de especial o paradigma funcional?
+
+            ---
+            #### Currying
+            Código em OCaml
+            ```
+            let soma x y = x + y ;;
+            (* val soma : int -> int -> int *)
+
+            (* Podemos avaliar "soma 1" *)
+
+            let inc = soma 1 ;;
+            (* val inc : int -> int *)
+
+            inc 5;;
+            (* int = 6 *)
+
+            ```
+
+            _Currying_: Transformação de uma função que recebe múltiplos parâmetros  de forma que ela pode ser chamada  recebendo menos parâmetros.
+
+            --- 
+
+            #### Higher order
+            Função para incrementar em 1 os valores de um vetor.
+
+            ```C++
+            void inc(int v[], int n){
+                for (int i=0; i < n; i ++ ) 
+                 v[i] += 1; 
+            }
+            ```
+
+            Função para multiplicar x 2 cada elemento
+
+            ```C++
+            void inc(int v[], int n){
+                for (int i=0; i < n; i ++ ) 
+                v[i] *= 2; 
+            }
+            ```
+
+            Será que tem uma melhor forma de fazer isso?
+
+            ---
+
+            #### As funções são cidadãos de primeira classe
+            - As funções podem ser _parâmetros_ de funções.
+            - As funções podem _retornar_ funções.
+
+            ```Python [1-4|6-9|11|12|13-14]
+            # Código em Python
+            # func é uma função! 
+            def converter(func, lista):
+                return [func(x) for x in lista]
+
+            converter(lambda x: x+1, [1,2,3])
+            [2, 3, 4]
+            converter(lambda x: x*2, [1,2,3])
+            [2, 4, 6]
+
+            list(map(lambda x: x+1, [1,2,3])) # [2, 3, 4]
+            list(filter(lambda x: x>5, [1,6,2,7])) # [6, 7]
+            reduce(lambda  x, y : x + y , [1,2,3]) # 6
+            reduce(lambda  x, y : x * y , [1,2,3]) # 6
+            ```
+
+            ---
+            <img src="img/emoji.png">
+            ---
+            
+            ### Quick Sort em Haskell
+
+            ```haskell
+            quicksort [] = [] 
+            quicksort (p:xs) = (quicksort menor) ++ [p] ++ (quicksort maior)
+                where
+                    menor = filter (< p) xs
+                    maior = filter (>= p) xs
+            ```
+    
+            ---
+
+            ## Programação por Restrições
+
+            ---
+
+            #### Programação por Restrições
+            -  Em programação imperativa, você deve pensar <span style="color:blue">COMO</span> resolver o problema.
+            - No paradigma de Programação por Restrições você só precisa pensar <span style="color:blue">QUAL</span> é o problema a resolver!
+
+
+          </script>
+        </section>
+
+        <section>
+          <h4>Quadrado Mágico</h4>
+          Considere uma matriz que contem os dígitos 1..9 tal que a soma dos elementos de cada linha, coluna e diagonais são  todas iguais.
+        <table border=0>
+          <tr>
+            <td>2</td><td>7</td><td>6</td>
+          </tr>
+          <tr>
+            <td>9</td><td>5</td><td>1</td>
+          </tr>
+          <tr>
+            <td>4</td><td>3</td><td>8</td>
+          </tr>
+        </table>
+
+        </section>
+
+        <section data-markdown data-separator="---">
+          <script type="text/template">
+            #### Alternativas
+            - Aleatoriamente?
+            - Força Bruta?
+            - Programação por restrições!
+
+            > As restrições eliminam valores das variáveis reduzindo o número de possibilidades! 
+
+            ![Propagação](img/prop.png)
+
+            ---
+            #### Quadrado mágico
+            Exemplo com [Picat](http://picat-lang.org/)
+
+            ```Prolog[1-2|3|4|5|6-8|9-10|12-13|14]
+            magic(N) =>
+              M=new_array(N,N), % M deve ser uma matriz N x N
+              M :: 1..N*N, % Só valores entre 1.. N*N
+              S :: 1..N*N*N, % Soma entre 1..N*N*N
+              all_different(M), % Todos os valores diferentes
+              foreach(I in 1..N)
+                Linha = { M[I,J] : J in 1..N}, % Lista com uma linha
+                S #= sum(Linha), % S deve ser igual a essa soma
+                Col = { M[J,I] : J in 1..N}, % Coluna
+                S #= sum(Col) % S deve ser igual a essa soma
+              end,
+              S #= sum({M[I,I] : I in 1..N}), % Diagonal
+              S #= sum({M[I,1+N-I] : I in 1..N}), % Diagonal Secundária
+              solve(M). % E voilá!
+            ```
+
+            ---
+
+            #### Outro Exemplo
+            - SEND + MORE = MONEY
+
+            ```Prolog[1-2|3|4|5-6|7-9|10]
+            go =>
+              Vars=[S,E,N,D,M,O,R,Y],  % uma var por cada letra
+              Vars :: 0..9, % Só digitos
+              all_different(Vars),     % todas eles diferentes
+              S #!= 0, % S não pode ser 0
+              M #!= 0, % M não pode ser 0
+              % A restrição principal
+              1000*S+100*E+10*N+D+1000*M+100*O+10*R+E
+                   #= 10000*M+1000*O+100*N+10*E+Y,
+              solve(Vars), % Buscar a solução
+
+            ```
+
+            ---
+            #### Mais exemplos
+
+            - Planejamento de horários
+            - Distribuição de recursos
+            - Reconfiguração de redes elétricas
+            - Scheduling de aviões
+            - ... e muitos mais!
+
+            -  [Google OR tools](https://developers.google.com/optimization/)
+            -  [Gecode](https://www.gecode.org/)
+
+
+            ---
+            ## Outras linguagens
+
+            ---
+
+            #### Programação web
+
+            - HTML 
+            - PHP
+            - Javascript
+            - Python
+
+            > 1001 frameworks!
+
+            ---
+
+            ### Bancos de dados 
+
+            Inserir dados
+
+            ```SQL
+            INSERT into USUARIOS (CPF, NOME, ENDEREÇO, DATA_NASCIMENTO)
+            VALUES (....);
+            ```
+
+            Consultar informações: 
+            ```SQL
+            Select Nome, Endereço
+            from USUARIOS
+            where data_nascimento  >= '01/01/1990';
+            ```
+
+            --- 
+
+            #### Para concluir...
+            > As linguagens de programação são muito divertidas! :-)
+
+            ##### Obrigado!
+
+
+            
+
+
+          </script>
+        </section>
+
+
+
+
+
+
+      </div>
+
+    </div>
+
+    <script src="../dist/reveal.js"></script>
+    <script src="../plugin/highlight/highlight.js"></script>
+    <script src="../plugin/markdown/markdown.js"></script>
+    <script src="../plugin/notes/notes.js"></script>
+
+    <script>
+
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+      });
+
+    </script>
+
+  </body>
+</html>
